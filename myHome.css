@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.leftBottom ul,.leftBottom li{
+    list-style: none;
+}
+.leftBottom ul{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+.leftBottom li{
+   flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftBottom li>span{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;;
+}
+.leftBottom li>span>span:nth-of-type(1){
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+.leftBottom li>span>span:nth-of-type(2){
+    display: inline-block;
+    vertical-align: middle;
+    width:70%;
+}
+.leftBottom li:hover,.clickStyle{
+    background: #eee;
+}
+.all{
+    background: linear-gradient(to right, #f9ffe5, #ffe1f5);
+    position: relative;
+}
+.center{
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    background: white;
+    width: 55%;
+    height: 78%;
+}
+.left{
+    width: 32%;
+    float: left;
+    /*background: pink;*/
+    border-right: 1px solid #eee;
+    height: 100%;
+    font-weight: bold;
+}
+.right{
+    width:68%;
+    float: right;
+    padding: 7% 10%;
+}
+.leftTop{
+    padding:10% 2%;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+}
+.leftTop>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.topRight{
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+.topRight>div{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+.leftBottom{
+    margin-top:15%;
+    height: 360px;
+    color: #666;
+}
+.my{
+    display: none;
+}
+.my>p{
+    line-height: 40px;
+    font-size: 15px;
+    text-indent: 40px;
+    color: #666;
+}
+.photo{
+    display: none;
+    height: 350px;
+    width: 500px;
+    position: relative;
+}
+.photo>h1{
+    position: relative;
+    margin: 10px 0;
+    text-align: left;
+    color: #aaa;
+}
+.photo>h3{
+    position: relative;
+    margin: 10px 0;
+    text-align: center;
+    color: #aaa;
+}
+.img{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    transition: opacity .5s linear;
+    border-radius: 10px;
+}
+.loc{
+    display: none;
+    color: #666;
+}
+.loc>div{
+    font-size: 100px !important;
+    margin: 30px 0 50px 50px;
+}
+.loc>h1{
+    text-align: right;
+}
+.book,.article{
+    display: none;
+}
+.book a,.article a{
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    line-height:40px;
+}
+.book a:hover,.article a:hover{
+    color: black;
+    font-size: 25px;
+}
+
